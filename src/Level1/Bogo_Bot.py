@@ -9,6 +9,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
+# Load environment variables from .env file
 load_dotenv()
 
 options = Options()
@@ -24,7 +25,7 @@ WebDriverWait(driver, 10).until(
 )
 
 def get_unopened_tiles():
-    tiles = driv 
+    tiles = driver.find_elements(By.CLASS_NAME, 'cell')
     return [tile for tile in tiles if 'hdd_closed' in tile.get_attribute('class') and 'hdd_flag' not in tile.get_attribute('class')]
 
 def get_game_state():
