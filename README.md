@@ -25,5 +25,5 @@ Minesweeper Website: https://minesweeper.online/game/4702341783
 ---
 
 ## 📌 Notes
--pyautogui only works on level 1 and requires setup
--selenium version only works on the website provided
+- pyautogui only works on level 1 and requires setup.
+- selenium version only works on the website provided.
