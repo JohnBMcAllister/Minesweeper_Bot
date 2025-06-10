@@ -23,3 +23,7 @@ Minesweeper Website: https://minesweeper.online/game/4702341783
 - If neither rule can be applied, it chooses a random tile to continue.
 
 ---
+
+## 📌 Notes
+-pyautogui only works on level 1 and requires setup
+-selenium version only works on the website provided
